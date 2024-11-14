@@ -20,7 +20,7 @@ Feature: Validación de la estructura de la respuesta
     Given url 'https://jsonplaceholder.typicode.com/users/1'
     When method get
     Then status 200
-    And match response.id == '#integer'
+    And match response.id == '#number'
     And match response.name == '#string'
     And match response.email == '#string'
     And match response.address == '#object'
