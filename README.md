@@ -1,15 +1,15 @@
-### **🔐 Kata de Autenticación Básica: Solicitud con Auth**
+### **📋 Kata con Validaciones Avanzadas: Validar una Lista Completa**
 
 #### 📑 Instrucciones
 
-1. **Objetivo**: Realiza una solicitud **GET** a un endpoint protegido que requiere autenticación básica.
-2. **Endpoint**: `https://httpbin.org/basic-auth/admin/password`
-3. **Credenciales**:
-   - **Usuario**: `admin`
-   - **Contraseña**: `password`
-4. **Pasos**:
-   - Realiza una solicitud **GET** con autenticación básica utilizando las credenciales proporcionadas.
-   - Valida que la respuesta contenga el campo `user` con el valor `admin`.
+1. **Objetivo**: Valida el contenido de una lista de usuarios.
+2. **Endpoint**: `https://jsonplaceholder.typicode.com/users`
+3. **Pasos**:
+   - Realiza una solicitud **GET** a la URL indicada.
+   - Valida que los tres primeros usuarios tengan los siguientes valores:
+      - `name` del primer usuario: `"Leanne Graham"`
+      - `name` del segundo usuario: `"Ervin Howell"`
+      - `name` del tercer usuario: `"Clementine Bauch"`
 
 #### 📥 Respuesta
 
@@ -17,14 +17,15 @@
   <summary>Haz clic aquí para ver la respuesta</summary>
 
 ```gherkin
-Feature: Solicitud con autenticación básica
+Feature: Validación de una lista de usuarios
 
-  Scenario: Acceder a la API con autenticación básica
-    Given url 'https://httpbin.org/basic-auth/admin/password'
-    And header Authorization = 'Basic YWRtaW46cGFzc3dvcmQ='
+  Scenario: Validar los tres primeros usuarios
+    Given url 'https://jsonplaceholder.typicode.com/users'
     When method get
     Then status 200
-    And match response.user == 'admin'
+    And match response[0].name == 'Leanne Graham'
+    And match response[1].name == 'Ervin Howell'
+    And match response[2].name == 'Clementine Bauch'
 ```
 
 </details>

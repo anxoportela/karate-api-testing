@@ -1,8 +1,9 @@
-Feature: Solicitud con autenticación básica
+Feature: Validación de una lista de usuarios
 
-  Scenario: Acceder a la API con autenticación básica
-    Given url 'https://httpbin.org/basic-auth/admin/password'
-    And header Authorization = 'Basic YWRtaW46cGFzc3dvcmQ='
+  Scenario: Validar los tres primeros usuarios
+    Given url 'https://jsonplaceholder.typicode.com/users'
     When method get
     Then status 200
-    And match response.user == 'admin'
+    And match response[0].name == 'Leanne Graham'
+    And match response[1].name == 'Ervin Howell'
+    And match response[2].name == 'Clementine Bauch'
