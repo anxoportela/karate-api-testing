@@ -1,27 +1,25 @@
-### **💡 Kata con Validación de Cuerpo Completo de JSON: Validar Todo el Cuerpo de la Respuesta**
+### **⚠️ Kata Avanzado con Error Handling: Manejar Respuestas de Error**
 
 #### 📑 Instrucciones
 
-1. **Objetivo**: Verifica la respuesta completa de una API.
-2. **Endpoint**: `https://jsonplaceholder.typicode.com/users/1`
+1. **Objetivo**: Realiza una solicitud a un endpoint no disponible y valida que el código de estado sea **404**.
+2. **Endpoint**: `https://jsonplaceholder.typicode.com/unknown`
 3. **Pasos**:
-   - Realiza una solicitud **GET** a la URL indicada.
-   - Valida todo el cuerpo de la respuesta, incluyendo los campos `id`, `name`, `email`, y `address`.
+   - Realiza una solicitud **GET** a un endpoint inexistente.
+   - Valida que el código de estado de la respuesta sea **404**.
 
-#### 📥 Respuesta
+### 📥 Respuesta
 
 <details>
   <summary>Haz clic aquí para ver la respuesta</summary>
 
 ```gherkin
-Feature: Validar cuerpo completo de la respuesta
+Feature: Manejo de respuestas de error
 
-  Scenario: Validar todo el cuerpo de la respuesta JSON
-    Given url 'https://jsonplaceholder.typicode.com/users/1'
+  Scenario: Solicitud a un endpoint inexistente
+    Given url 'https://jsonplaceholder.typicode.com/unknown'
     When method get
-    Then status 200
-    And match response == {id: 1, name: 'Leanne Graham', email: 'Sincere@april.biz', address: {street: 'Kulas Light', suite: 'Apt. 556', city: 'Gwenborough', zipcode: '92998-3874', geo: {lat: '-37.3159', lng: '81.1496'}}, username: 'Bret', phone: '1-770-736-8031 x56442', website: 'hildegard.org', company: {name: 'Romaguera-Crona', catchPhrase: 'Multi-layered client-server neural-net', bs: 'harness real-time e-markets'}}
-    
+    Then status 404
 ```
 
 </details>
