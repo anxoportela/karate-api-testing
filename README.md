@@ -1,22 +1,17 @@
-## Kata 1: Verificar el Estado de una API REST (Nivel Principiante)
+## **🏁 Kata Básico: Verificar el Estado de una API REST (Nivel Principiante)**
 
-**Nivel**: Principiante  
-**Descripción**: Verifica que una API REST esté activa y responda con el estado adecuado.
+### 📑 Instrucciones
 
-### 📝 Instrucciones
-
-1. **Objetivo**: Realiza una solicitud GET para verificar el estado de una API REST.
-2. **Pasos**:
-   - Realiza una solicitud GET al endpoint proporcionado.
-   - Asegúrate de que el código de estado devuelto sea 200.
-
-3. **Requisitos de validación**:
-   - La API debe responder con el estado `200`.
+1. **Objetivo**: Verifica que la API esté activa y responda correctamente.
+2. **Endpoint**: `https://jsonplaceholder.typicode.com/users`
+3. **Pasos**:
+   - Realiza una solicitud **GET** a la URL indicada.
+   - Valida que el código de estado de la respuesta sea **200**, lo que indica que la API está funcionando correctamente.
 
 ### 📥 Respuesta
 
 <details>
-  <summary>Haz clic aquí para ver la respuesta</summary>
+<summary>Haz clic aquí para ver la respuesta</summary>
 
 ```gherkin
 Feature: Verificar respuesta de estado de la API
