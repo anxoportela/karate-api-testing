@@ -1,8 +1,9 @@
-Feature: Validar contenido de la respuesta JSON
+Feature: Crear un nuevo usuario
 
-  Scenario: Obtener lista de usuarios y validar el primer usuario
+  Scenario: Crear un usuario con solicitud POST
     Given url 'https://jsonplaceholder.typicode.com/users'
-    When method get
-    Then status 200
-    And match response[0].id == 1
-    And match response[0].name == 'Leanne Graham'
+    And request { name: 'Juan Pérez', email: 'juan@example.com', phone: '123-456-7890' }
+    When method post
+    Then status 201
+    And match response.name == 'Juan Pérez'
+    And match response.email == 'juan@example.com'
