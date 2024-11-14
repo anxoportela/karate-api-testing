@@ -71,7 +71,7 @@ karate-api-testing/
 │   └── test/
 │       ├── java/
 │       │   └── com/
-│       │       └── ejemplo/
+│       │       └── example/
 │       │           └── KarateTest.java
 │       └── resources/
 │           ├── api-test.feature
@@ -82,7 +82,7 @@ karate-api-testing/
 
 - **src/test/resources/api-test.feature**: El archivo que contiene las pruebas de una API básica.
 - **src/test/resources/api-auth-test.feature**: El archivo que contiene las pruebas de una API con autenticación.
-- **src/test/java/com/ejemplo/KarateTest.java**: La clase Java que ejecuta las pruebas.
+- **src/test/java/com/example/KarateTest.java**: La clase Java que ejecuta las pruebas.
 - **pom.xml**: El archivo de configuración de Maven que contiene las dependencias necesarias para Karate.
 
 ---
