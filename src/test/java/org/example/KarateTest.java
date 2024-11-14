@@ -2,7 +2,7 @@ package org.example;
 
 import com.intuit.karate.junit5.Karate;
 
-public class AppTest {
+public class KarateTest {
 
     /**
      * Este método ejecuta ambos archivos .feature en una única ejecución de prueba
