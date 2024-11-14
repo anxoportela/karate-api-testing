@@ -1,16 +1,15 @@
-### **✍️ Kata Básico con Parámetros: Solicitud POST**
+### **🔐 Kata de Autenticación Básica: Solicitud con Auth (Nivel Intermedio)**
 
 #### 📑 Instrucciones
 
-1. **Objetivo**: Crea un nuevo usuario mediante una solicitud **POST**.
-2. **Endpoint**: `https://jsonplaceholder.typicode.com/users`
-3. **Datos de Entrada**:
-   - `name`: `"Juan Pérez"`
-   - `email`: `"juan@example.com"`
-   - `phone`: `"123-456-7890"`
+1. **Objetivo**: Realiza una solicitud **GET** a un endpoint protegido que requiere autenticación básica.
+2. **Endpoint**: `https://httpbin.org/basic-auth/admin/password`
+3. **Credenciales**:
+   - **Usuario**: `admin`
+   - **Contraseña**: `password`
 4. **Pasos**:
-   - Realiza una solicitud **POST** con los parámetros indicados.
-   - Valida que la respuesta contenga los valores de `name`, `email` y `phone` que enviaste.
+   - Realiza una solicitud **GET** con autenticación básica utilizando las credenciales proporcionadas.
+   - Valida que la respuesta contenga el campo `user` con el valor `admin`.
 
 #### 📥 Respuesta
 
@@ -18,15 +17,14 @@
   <summary>Haz clic aquí para ver la respuesta</summary>
 
 ```gherkin
-Feature: Crear un nuevo usuario
+Feature: Solicitud con autenticación básica
 
-  Scenario: Crear un usuario con solicitud POST
-    Given url 'https://jsonplaceholder.typicode.com/users'
-    And request { name: 'Juan Pérez', email: 'juan@example.com', phone: '123-456-7890' }
-    When method post
-    Then status 201
-    And match response.name == 'Juan Pérez'
-    And match response.email == 'juan@example.com'
+  Scenario: Acceder a la API con autenticación básica
+    Given url 'https://httpbin.org/basic-auth/admin/password'
+    And header Authorization = 'Basic YWRtaW46cGFzc3dvcmQ='
+    When method get
+    Then status 200
+    And match response.user == 'admin'
 ```
 
 </details>

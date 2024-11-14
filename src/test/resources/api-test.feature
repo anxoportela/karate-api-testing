@@ -1,9 +1,8 @@
-Feature: Crear un nuevo usuario
+Feature: Solicitud con autenticación básica
 
-  Scenario: Crear un usuario con solicitud POST
-    Given url 'https://jsonplaceholder.typicode.com/users'
-    And request { name: 'Juan Pérez', email: 'juan@example.com', phone: '123-456-7890' }
-    When method post
-    Then status 201
-    And match response.name == 'Juan Pérez'
-    And match response.email == 'juan@example.com'
+  Scenario: Acceder a la API con autenticación básica
+    Given url 'https://httpbin.org/basic-auth/admin/password'
+    And header Authorization = 'Basic YWRtaW46cGFzc3dvcmQ='
+    When method get
+    Then status 200
+    And match response.user == 'admin'
