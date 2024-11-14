@@ -1,4 +1,4 @@
-### **🔐 Kata de Autenticación Básica: Solicitud con Auth (Nivel Intermedio)**
+### **🔐 Kata de Autenticación Básica: Solicitud con Auth**
 
 #### 📑 Instrucciones
 
