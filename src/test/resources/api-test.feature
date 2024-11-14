@@ -1,11 +1,8 @@
-Feature: Validación de la estructura de la respuesta
+Feature: Validación dinámica de respuesta
 
-  Scenario: Validar la estructura de la respuesta JSON
-    Given url 'https://jsonplaceholder.typicode.com/users/1'
+  Scenario: Validar contenido dinámico de la respuesta
+    Given url 'https://jsonplaceholder.typicode.com/users'
     When method get
     Then status 200
-    And match response.id == '#number'
-    And match response.name == '#string'
-    And match response.email == '#string'
-    And match response.address == '#object'
-    And match response.address.city == '#string'
+    And match response[0].name != ''
+    And assert response.length > 5
