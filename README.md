@@ -1,4 +1,4 @@
-### **🔍 Kata Intermedio: Validar el Contenido de una Respuesta JSON (Nivel Intermedio)**
+### **🔍 Kata Intermedio: Validar el Contenido de una Respuesta JSON**
 
 #### 📑 Instrucciones
 
