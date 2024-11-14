@@ -1,6 +1,6 @@
-## **🏁 Kata Básico: Verificar el Estado de una API REST (Nivel Principiante)**
+### **🏁 Kata Básico: Verificar el Estado de una API REST (Nivel Principiante)**
 
-### 📑 Instrucciones
+#### 📑 Instrucciones
 
 1. **Objetivo**: Verifica que la API esté activa y responda correctamente.
 2. **Endpoint**: `https://jsonplaceholder.typicode.com/users`
@@ -8,7 +8,7 @@
    - Realiza una solicitud **GET** a la URL indicada.
    - Valida que el código de estado de la respuesta sea **200**, lo que indica que la API está funcionando correctamente.
 
-### 📥 Respuesta
+#### 📥 Respuesta
 
 <details>
 <summary>Haz clic aquí para ver la respuesta</summary>
