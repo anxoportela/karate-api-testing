@@ -1,9 +1,11 @@
-Feature: Validación de una lista de usuarios
+Feature: Validación de la estructura de la respuesta
 
-  Scenario: Validar los tres primeros usuarios
-    Given url 'https://jsonplaceholder.typicode.com/users'
+  Scenario: Validar la estructura de la respuesta JSON
+    Given url 'https://jsonplaceholder.typicode.com/users/1'
     When method get
     Then status 200
-    And match response[0].name == 'Leanne Graham'
-    And match response[1].name == 'Ervin Howell'
-    And match response[2].name == 'Clementine Bauch'
+    And match response.id == '#number'
+    And match response.name == '#string'
+    And match response.email == '#string'
+    And match response.address == '#object'
+    And match response.address.city == '#string'
