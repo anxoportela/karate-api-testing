@@ -1,25 +1,27 @@
-### **🏁 Kata Básico: Verificar el Estado de una API REST (Nivel Principiante)**
+### **🔍 Kata Intermedio: Validar el Contenido de una Respuesta JSON (Nivel Intermedio)**
 
 #### 📑 Instrucciones
 
-1. **Objetivo**: Verifica que la API esté activa y responda correctamente.
+1. **Objetivo**: Valida que la respuesta JSON contenga la información correcta.
 2. **Endpoint**: `https://jsonplaceholder.typicode.com/users`
 3. **Pasos**:
    - Realiza una solicitud **GET** a la URL indicada.
-   - Valida que el código de estado de la respuesta sea **200**, lo que indica que la API está funcionando correctamente.
+   - Valida que el primer usuario de la respuesta tenga el `id` igual a `1` y el `name` igual a `"Leanne Graham"`.
 
 #### 📥 Respuesta
 
 <details>
-<summary>Haz clic aquí para ver la respuesta</summary>
+  <summary>Haz clic aquí para ver la respuesta</summary>
 
 ```gherkin
-Feature: Verificar respuesta de estado de la API
+Feature: Validar contenido de la respuesta JSON
 
-  Scenario: Obtener lista de usuarios
+  Scenario: Obtener lista de usuarios y validar el primer usuario
     Given url 'https://jsonplaceholder.typicode.com/users'
     When method get
     Then status 200
+    And match response[0].id == 1
+    And match response[0].name == 'Leanne Graham'
 ```
 
 </details>
