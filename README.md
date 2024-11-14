@@ -119,7 +119,7 @@ karate-api-testing/
 
 ## 📊 Reportes
 
-Después de ejecutar las pruebas, Karate genera un reporte HTML detallado de cada ejecución. El reporte se encuentra en la carpeta `target/karate-reports`.
+Después de ejecutar las pruebas, Karate genera un reporte HTML detallado de cada ejecución. El reporte se encuentra en la carpeta `report`.
 
 Puedes abrirlo con tu navegador para ver el resumen de todas las pruebas ejecutadas.
 
