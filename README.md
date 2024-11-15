@@ -1,3 +1,4 @@
+<!-- markdownlint-disable -->
 ### **✍️ Kata Básico con Parámetros: Solicitud POST**
 
 #### 📑 Instrucciones
