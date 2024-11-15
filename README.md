@@ -1,3 +1,4 @@
+<!-- markdownlint-disable -->
 ### **📋 Kata con Validaciones Avanzadas: Validar una Lista Completa**
 
 #### 📑 Instrucciones
