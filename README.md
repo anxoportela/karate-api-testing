@@ -1,3 +1,4 @@
+<!-- markdownlint-disable -->
 ### **🏁 Kata Básico: Verificar el Estado de una API REST**
 
 #### 📑 Instrucciones
