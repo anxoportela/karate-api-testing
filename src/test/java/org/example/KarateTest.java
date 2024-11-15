@@ -11,7 +11,6 @@ public class KarateTest {
     @Karate.Test
     Karate testAllApi() {
         // Se especifican ambos archivos *.feature que se desean ejecutar
-        return Karate.run("src/test/resources/api-test.feature",
-                        "src/test/resources/api-auth-test.feature").reportDir("report");
+        return Karate.run("classpath:api-test.feature","classpath:api-auth-test.feature").reportDir("target/karate-report");
     }
 }
