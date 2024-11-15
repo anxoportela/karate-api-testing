@@ -1,3 +1,4 @@
+<!-- markdownlint-disable -->
 ### **🔄 Kata con Datos Dinámicos: Validar Contenido de Respuesta con Datos Variables**
 
 #### 📑 Instrucciones
