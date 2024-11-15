@@ -1,3 +1,4 @@
+<!-- markdownlint-disable -->
 ### **🔐 Kata de Autenticación Básica: Solicitud con Auth**
 
 #### 📑 Instrucciones
