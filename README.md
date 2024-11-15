@@ -1,3 +1,4 @@
+<!-- markdownlint-disable -->
 ### **🔍 Kata Intermedio: Validar el Contenido de una Respuesta JSON**
 
 #### 📑 Instrucciones
