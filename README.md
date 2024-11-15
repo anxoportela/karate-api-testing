@@ -1,3 +1,4 @@
+<!-- markdownlint-disable -->
 ### **🧩 Kata con Validación de Estructura de JSON: Validar Respuesta Completa**
 
 #### 📑 Instrucciones
