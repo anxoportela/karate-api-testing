@@ -10,14 +10,16 @@ Este proyecto está diseñado para automatizar las pruebas de API en servicios w
 
 ## 📋 Tabla de Contenidos
 
-- [🚀 Descripción](#-descripción)
-- [🔧 Requisitos](#-requisitos)
-- [📥 Instalación](#-instalación)
-- [📝 Estructura de Archivos](#-estructura-de-archivos)
-- [🛠️ Ejecución de Pruebas](#️-ejecución-de-pruebas)
-- [📊 Reportes](#-reportes)
-- [📍 Contribución](#-contribución)
-- [📜 Licencia](#-licencia)
+- [Karate API Testing Project](#karate-api-testing-project)
+  - [🚀 Descripción](#-descripción)
+  - [📋 Tabla de Contenidos](#-tabla-de-contenidos)
+  - [🔧 Requisitos](#-requisitos)
+  - [📥 Instalación](#-instalación)
+  - [📝 Estructura de Archivos](#-estructura-de-archivos)
+  - [🛠️ Ejecución de Pruebas](#️-ejecución-de-pruebas)
+  - [📊 Reportes](#-reportes)
+  - [📍 Contribución](#-contribución)
+  - [📜 Licencia](#-licencia)
 
 ---
 
@@ -52,7 +54,7 @@ Antes de comenzar, asegúrate de tener los siguientes programas instalados:
 
 3. **Configurar las pruebas de Karate**:
 
-   El proyecto contiene dos archivos de características de Karate: 
+   El proyecto contiene dos archivos de características de Karate:
 
    - `src/test/resources/api-test.feature`: Pruebas básicas de una API.
    - `src/test/resources/api-auth-test.feature`: Pruebas de una API con autenticación.
@@ -63,7 +65,7 @@ Antes de comenzar, asegúrate de tener los siguientes programas instalados:
 
 La estructura básica del proyecto es la siguiente:
 
-```
+```bash
 karate-api-testing/
 │
 ├── src/
@@ -142,4 +144,3 @@ Puedes abrirlo con tu navegador para ver el resumen de todas las pruebas ejecuta
 Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
 
 ---
-
