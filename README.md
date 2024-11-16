@@ -1,25 +1,23 @@
+<!-- omit from toc -->
 # Karate API Testing Project
 
 Este proyecto usa **Karate**, un potente framework de pruebas de API que facilita la automatización de pruebas tanto para APIs REST como SOAP y GraphQL. A través de su sintaxis Gherkin (BDD), puedes escribir pruebas de manera sencilla y comprensible, incluso si no eres un desarrollador experimentado.
 
+<!-- omit from toc -->
 ## 🚀 Descripción
 
 Este proyecto está diseñado para automatizar las pruebas de API en servicios web utilizando **Karate**. Puedes probar APIs de manera eficiente, realizar pruebas de autenticación, manejar parámetros dinámicos, y generar reportes detallados. Además, la integración con herramientas CI/CD como Jenkins, GitHub Actions y GitLab CI es fácil.
 
----
-
+<!-- omit from toc -->
 ## 📋 Tabla de Contenidos
 
-- [Karate API Testing Project](#karate-api-testing-project)
-  - [🚀 Descripción](#-descripción)
-  - [📋 Tabla de Contenidos](#-tabla-de-contenidos)
-  - [🔧 Requisitos](#-requisitos)
-  - [📥 Instalación](#-instalación)
-  - [📝 Estructura de Archivos](#-estructura-de-archivos)
-  - [🛠️ Ejecución de Pruebas](#️-ejecución-de-pruebas)
-  - [📊 Reportes](#-reportes)
-  - [📍 Contribución](#-contribución)
-  - [📜 Licencia](#-licencia)
+- [� Requisitos](#-requisitos)
+- [📥 Instalación](#-instalación)
+- [📝 Estructura de Archivos](#-estructura-de-archivos)
+- [🛠️ Ejecución de Pruebas](#️-ejecución-de-pruebas)
+- [📊 Reportes](#-reportes)
+- [📍 Contribución](#-contribución)
+- [📜 Licencia](#-licencia)
 
 ---
 
