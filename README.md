@@ -1,3 +1,4 @@
+<!-- markdownlint-disable -->
 ### **⚠️ Kata Avanzado con Error Handling: Manejar Respuestas de Error**
 
 #### 📑 Instrucciones
