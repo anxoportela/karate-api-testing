@@ -1,3 +1,4 @@
+<!-- markdownlint-disable -->
 ### **🌍 Kata Completa de API: Verificar Todos los Endpoints de Usuarios**
 
 #### 📑 Instrucciones
